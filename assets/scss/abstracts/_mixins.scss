@@ -1,0 +1,32 @@
+@mixin size($size) {
+    width: $size;
+    height: $size;
+}
+
+@mixin flexcenter {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@mixin respond($option) {
+    @if $option == desk {
+        @media only screen and (min-width: 1024px) and (max-width: 1199px) {@content};
+    }
+
+    @if $option == max-tab {
+        @media only screen and (max-width: 1023px) {@content};
+    }
+
+    @if $option == tab {
+        @media only screen and (min-width: 768px) and (max-width: 1023px) {@content};
+    }
+
+    @if $option == mb-md {
+        @media only screen and (max-width: 767px) {@content};
+    }
+
+    @if $option == mb-sm {
+        @media only screen and (max-width: 480px) {@content};
+    }
+}

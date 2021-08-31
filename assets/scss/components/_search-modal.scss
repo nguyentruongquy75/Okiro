@@ -1,0 +1,66 @@
+.search-modal {
+    animation: fadeIn 0.2s linear;
+    display: none;
+
+    &__close {
+        position: fixed;
+        top: 5rem;
+        right: 5rem;
+        font-size: 4rem;
+        color: $color-white;
+        z-index: 1;
+        
+        label {
+            cursor: pointer;
+        }
+    }
+
+    &__content {
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 65vw;
+        height: 14.5rem;
+        border-radius: 1.8rem;
+        overflow: hidden;
+        z-index: 1;
+    }
+
+    &__input {
+        display: block;
+        font-size: 3.2rem;
+        font-weight: 800;
+        color: $color-text;
+        padding-left: 2rem;
+        outline: none;
+        border: none;
+        height: 70%;
+        width: 100%;
+
+        &::placeholder {
+            color: #dbdbdf;
+        }
+    }
+
+    &__desc-container {
+        font-size: .9rem;
+        font-weight: 800;
+        letter-spacing: 2px;
+        color: $color-white;
+        background-color: $color-blue;
+        display: flex;
+        align-items: center;
+        height: 30%;
+        padding-left: 2.4rem;
+    }
+}
+
+#search-modal {
+    &:checked {
+        & ~ .search-modal,
+        & ~ .overlay {
+            display: block;
+        }
+    }
+}

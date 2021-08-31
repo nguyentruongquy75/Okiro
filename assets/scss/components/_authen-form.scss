@@ -1,0 +1,42 @@
+.authentication__form {
+
+    .authen-label {
+        font-size: 1.4rem;
+        display: block;
+    }
+
+    .authen-input {
+        display: block;
+        width: 60%;
+        height: 7rem;
+        margin: 1.2rem auto 2.8rem;
+        padding: 0 2.4rem;
+        border: none;
+        outline: none;
+        color: $color-text;
+        background-color: $color-grey-dark;
+        border-radius: 10rem;
+        font-size: 2.2rem;
+        text-align: center;
+
+        @include respond(mb-md) {
+            width: 80%;
+        }
+    }
+
+    .authentication__question {
+        display: block;
+        font-size: 1.4rem;
+        margin-top: 2.4rem;
+
+        a {
+            font-size: 1.4rem;
+            font-weight: 900;
+            color: $color-text;
+
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+}

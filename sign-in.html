@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign In</title>
+
+    <link rel="stylesheet" href="./assets/font/font.css" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+</head>
+<body>
+    <div class="authentication">
+        <div class="authentication__left">&nbsp;</div>
+        <div class="authentication__right">
+            <div class="logo-box">
+                <a href="index.html">
+                    <img src="./assets/img/logo.svg" alt="logo" class="logo">              
+                </a>
+            </div>
+
+            <div class="authentication__container">
+                <h1 class="heading">Sign in to Okiro</h1>
+    
+                <form class="authentication__form">
+                    <label for="email" class="authen-label">Your email address</label>
+                    <input type="email" required id="email" class="authen-input">
+                    <button type="submit" class="btn btn--lg btn--blue">Send login link</button>
+                    <span class="authentication__question">
+                        Don’t have an account yet?
+                        <a href="sign-up.html">Sign up</a>
+                    </span>
+                </form>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="change-theme">
+        <input type="checkbox" hidden  id="change-theme">
+        <label for="change-theme" id="change-theme-label">
+          <img src="./assets/img/sun.png" alt="Image" class="change-theme__img change-theme__img-sun">
+          <img src="./assets/img/half-moon.png" alt="Image" class="change-theme__img change-theme__img-moon">
+        </label>
+        <div class="change-theme__round">&nbsp;</div>
+    </div>
+
+    <script src="./assets/js/main.js"></script>
+</body>
+</html>

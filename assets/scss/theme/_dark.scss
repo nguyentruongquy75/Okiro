@@ -1,0 +1,153 @@
+body {
+
+    &.dark {
+        background-color: $color-bg-dark;
+
+        .header ,
+        .post {
+            * {
+                color: inherit !important;
+            }
+            color: $color-text-dark;
+        }
+
+        .card {
+            background-color: #2a3343;
+
+            &__name {
+                color: $color-text-dark;
+            }
+            &:hover {
+                box-shadow: rgba(255, 255, 255, 0.2) 0px 8px 24px;
+            }
+        }
+
+        .search-modal {
+            &__input {
+                background-color: $color-bg-dark;
+                color: $color-text-dark;
+
+                &::placeholder {
+                    color: #394555;
+                }
+            }
+
+            &__desc-container {
+                background-color: #cb73ff;
+            }
+        }
+
+        .mobile-menu {
+
+            .bar {
+                background-color: $color-text-dark;
+            }
+        }
+
+        .sub-nav {
+            background-color: #344052;
+        }
+        
+
+        .section__heading {
+            color: $color-text-dark;
+
+            &__seperate {
+                fill: #344052;
+            }
+        }
+
+        .post {
+
+            &__desc {
+                color: $color-text-dark;
+            }
+        }
+
+        .btn--blue {
+            background-color: #cb73ff;
+
+            &:hover {
+                background-color: darken(#cb73ff, 10%);
+            }
+        }
+
+        .post {
+            .tag {
+                background-color: #344052;
+    
+                &:hover {
+                    background-color: lighten($color: #344052, $amount: 10%);
+                }
+            }
+        }
+
+        .subscribe-section {
+            .subscribe__heading {
+                color: $color-text-dark;
+            }
+
+            .subscribe__form {
+                background-color: #344052;
+            }
+
+            .subscribe__input {
+                color: $color-text-dark;
+
+                &::placeholder {
+                    color: $color-text-dark;
+                }
+            }
+        }
+
+        .footer {
+
+            * {
+                color: inherit !important;
+            }
+            
+            color: $color-text-dark;
+
+            &__social-item {
+
+                &-link {
+                    &:hover {
+                        color: #cb73ff !important;
+                    }
+                }
+            }
+        }
+
+        .authors-section {
+
+            .author__else-heading {
+                color: $color-text-dark;
+            }
+
+            .card {
+                color: $color-text-dark;
+
+                * {
+                    color: inherit !important;
+                }
+                
+            }
+        }
+
+        .authentication {
+            background-color: $color-bg-dark;
+            color: $color-text-dark;
+
+            * {
+                color: inherit !important;
+            }
+
+            .authen-input {
+                background-color: #2a3343;
+            }
+        }
+
+        
+
+    }
+}

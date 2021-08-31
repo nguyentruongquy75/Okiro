@@ -1,0 +1,43 @@
+.authentication {
+    display: flex;
+    height: 100vh;
+
+    &__left {
+        background: url(../img/authen-img.jfif) center / cover no-repeat;
+        flex-basis: 40%;
+
+        @include respond(max-tab) {
+            display: none;
+        }
+    }
+
+    &__container {
+        position: absolute;
+        width: 100%;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+
+    &__right {
+        position: relative;
+        flex: 1;
+        padding-top: 2.4rem;
+        text-align: center;
+        color: $color-text;
+        .logo {
+            height: 4.5rem;
+
+            &-box {
+                a {
+                    display: inline-block;
+                }
+            }
+        }
+
+        .heading {
+            font-size: 4.2rem;
+            font-weight: 900;
+            margin-bottom: 3.2rem;
+        }
+    }
+}

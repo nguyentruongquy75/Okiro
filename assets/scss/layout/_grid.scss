@@ -1,0 +1,88 @@
+.wrapper {
+    width: 115rem;
+    max-width: 100%;
+    margin: 0 auto;
+
+    @include respond(desk) {
+        width: 91rem;
+    }
+
+    @include respond(tab) {
+        width: 66rem;
+    }
+
+    @include respond(mb-md) {
+        width: 45rem;
+    }
+
+    @include respond(mb-sm) {
+        width: 34rem;
+    }
+}
+
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 calc(-1 * var(--col-space));
+
+    &.row-xl-5 {
+        --col-num: 5;
+    }
+
+    &.row-xl-4 {
+        --col-num: 4;
+    }
+
+    &.row-xl-3 {
+        --col-num: 3;
+    }
+
+    &.row-xl-2 {
+        --col-num: 2;
+    }
+
+    &.row-lg-4 {
+        @include respond(desk) {
+            --col-num: 4;
+        }
+    }
+
+    &.row-lg-3 {
+        @include respond(tab) {
+            --col-num: 3;
+        }
+    }
+
+    &.row-lg-2 {
+        @include respond(tab) {
+            --col-num: 2;
+        }
+    }
+
+    &.row-lg-1 {
+        @include respond(tab) {
+            --col-num: 1;
+        }
+    }
+
+    &.row-sm-2 {
+        @include respond(mb-md) {
+            --col-num: 2;
+        }
+    }
+
+    &.row-sm-1 {
+        @include respond(mb-md) {
+            --col-num: 1;
+        }
+    }
+
+}
+
+.col {
+    flex-basis: calc(100% / var(--col-num));
+    padding: 0 var(--col-space);
+    flex-shrink: 0;
+    flex-grow: 0;
+}

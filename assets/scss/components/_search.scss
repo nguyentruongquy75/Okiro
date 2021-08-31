@@ -1,0 +1,13 @@
+.search {
+    font-size: 2rem;
+    display: inline-block;
+    
+    &-icon {
+        cursor: pointer;
+        padding: 0.4rem;
+    }
+
+    label {
+        @include size(100%);
+    }
+}

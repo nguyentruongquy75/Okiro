@@ -1,0 +1,104 @@
+.footer {
+
+    --col-space: 2rem;
+    padding: 8rem 0 2rem;
+    position: relative;
+    border-top: 1px solid $color-grey;
+    .col:first-child {
+        flex: 1;
+
+        @include respond(max-tab) {
+            flex-basis: 100%;
+            text-align: center;
+            margin-bottom: 2.4rem;
+
+            .footer__desc {
+                margin: 1.2rem auto;
+            }
+        }
+    }
+
+    @include respond(mb-md) {
+        text-align: center;
+
+        .col:last-child {
+            flex-basis: 100%;
+        }
+    }
+
+    &__logo {
+        height: 3.5rem;
+        object-fit: cover;
+    }
+
+    &__desc {
+        width: 50%;
+        color: $color-text;
+        line-height: 1.4;
+        margin: 1.2rem 0;
+    }
+
+    &__social {
+
+        &-item {
+            display: inline-block;
+
+            & + & {
+                margin-left: 2rem;
+            }
+
+            &-link {
+                display: inline-block;
+                font-size: 2.4rem;
+                padding: .8rem;
+                color: $color-text;
+
+                &:hover {
+                    color: $color-blue;
+                }
+            }
+        }
+    }
+
+    &__nav {
+        padding: 0 2.4rem;
+        &-heading {
+            font-size: 1.2rem;
+            line-height: 1;
+            color: $color-text;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            margin-bottom: 3.2rem;
+
+            @include respond(tab) {
+                margin-bottom: 2.4rem;
+            }
+        }
+
+        &-item {
+
+            & + & {
+                margin-top: 2.4rem;
+            }
+            
+            &-link {
+                font-weight: 800;
+                color: $color-text;
+
+                &:hover {
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+
+    &__copyright {
+        display: block;
+        font-size: 1.2rem;
+        margin-top: 3rem;
+
+        @include respond(tab) {
+            text-align: center;
+        }
+    }
+}

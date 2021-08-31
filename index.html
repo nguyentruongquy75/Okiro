@@ -1,0 +1,715 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Okiro</title>
+    <link rel="stylesheet" href="./assets/icon/fontawesome-free-5.15.4-web/css/all.min.css">
+    <link rel="stylesheet" href="./assets/css/style.css" />
+  </head>
+  <body class="">
+    <header class="header">
+      <div class="wrapper header-container">
+        <div class="navigation">
+          <ul class="navigation__list">
+            <li class="navigation__item">
+              <a href="index.html" class="navigation__item-link navigation__item-link--active">Home</a>
+            </li>
+
+            <li class="navigation__item">
+              <a href="authors.html" class="navigation__item-link">Authors</a>
+            </li>
+
+            <li class="navigation__item">
+              <a href="tags.html" class="navigation__item-link">Tags</a>
+            </li>
+
+            <li class="navigation__item">
+              <div class="dropdown-btn navigation__dropdown">
+                <i class="fas fa-ellipsis-h"></i>
+              </div>
+
+              <div class="sub-nav">
+                <ul class="sub-nav__list">
+                  <li class="sub-nav__item">
+                    <a href="#" class="sub-nav__item-link">Features</a>
+                  </li>
+
+                  <li class="sub-nav__item">
+                    <a href="#" class="sub-nav__item-link">Subscribe</a>
+                  </li>
+
+                  <li class="sub-nav__item">
+                    <a href="#" class="sub-nav__item-link">Contact</a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+          </ul>
+        </div>
+
+        <div class="header__logo-box">
+          <a href="#">
+            <img
+              src="./assets/img/logo.svg"
+              alt="Logo"
+              class="header__logo-img logo"
+            />
+          </a>
+        </div>
+
+        <div class="header__right">
+          <div class="header__right-item search">
+            <label for="search-modal">
+              <i class="fas fa-search search-icon"></i>
+            </label>
+          </div>
+
+          <a href="sign-in.html" class="header__right-item header__sign-in">Sign in</a>
+          <a
+            href="sign-up.html"
+            class="header__right-item btn btn--md btn--blue header__sign-up"
+            >Sign up</a
+          >
+        </div>
+
+        <div class="mobile-menu">
+          <label for="mobile-menu">
+            <div class="bar-container">
+              <span class="bar bar-1">&nbsp;</span>
+              <span class="bar bar-2">&nbsp;</span>
+              <span class="bar bar-3">&nbsp;</span>
+            </div>
+          </label>
+
+          <input type="checkbox" hidden id="mobile-menu">
+          <div class="sub-nav">
+            <ul class="sub-nav__list">
+              <li class="sub-nav__item">
+                <a href="index.html" class="sub-nav__item-link">Home</a>
+              </li>
+
+              <li class="sub-nav__item">
+                <a href="authors.html" class="sub-nav__item-link">Authors</a>
+              </li>
+
+              <li class="sub-nav__item">
+                <a href="#" class="sub-nav__item-link">Tags</a>
+              </li>
+
+              <li class="sub-nav__item">
+                <a href="#" class="sub-nav__item-link">Subscribe</a>
+              </li>
+
+              <li class="sub-nav__item">
+                <a href="#" class="sub-nav__item-link">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main class="main">
+      <div class="wrapper">
+        <section class="featured-section">
+          <h4 class="section__heading">FEATURED</h4>
+          <svg class="section__heading__seperate" role="img" viewBox="0 0 136 24" xmlns="http://www.w3.org/2000/svg"><path d="M1.525 1.525a3.5 3.5 0 014.95 0L20 15.05 33.525 1.525a3.5 3.5 0 014.95 0L52 15.05 65.525 1.525a3.5 3.5 0 014.95 0L84 15.05 97.525 1.525a3.5 3.5 0 014.95 0L116 15.05l13.525-13.525a3.5 3.5 0 014.95 4.95l-16 16a3.5 3.5 0 01-4.95 0L100 8.95 86.475 22.475a3.5 3.5 0 01-4.95 0L68 8.95 54.475 22.475a3.5 3.5 0 01-4.95 0L36 8.95 22.475 22.475a3.5 3.5 0 01-4.95 0l-16-16a3.5 3.5 0 010-4.95z"></path></svg>
+
+          <div class="featured-section__list">
+            <div class="row row-xl-5 row-lg-4 row-lg-3 row-sm-2">
+              <div class="col">
+                <a href="#">
+                  <article class="card card--light-blue card--sm">
+                    <div class="card__link">
+                      <img
+                        src="./assets/img/blog-img-1.jpeg"
+                        alt="CardImg"
+                        class="card__img"
+                      />
+
+                      <div class="card__content">
+                        <h5 class="card__heading">Don’t be afraid</h5>
+                        <div class="card__authors">
+                          <a class="card__authors-link" href="#"
+                            >Megan Anderson</a
+                          >
+                          ,
+                          <a class="card__authors-link" href="#"
+                            >Lauren Langford</a
+                          >
+                        </div>
+                      </div>
+                    </div>
+                  </article>
+                </a>
+              </div>
+
+              <div class="col">
+                <a href="#">
+                  <article class="card card--rose card--sm">
+                    <div class="card__link">
+                      <img
+                        src="./assets/img/blog-img-2.jpeg"
+                        alt="CardImg"
+                        class="card__img"
+                      />
+
+                      <div class="card__content">
+                        <h5 class="card__heading">
+                          You have to fight to reach your dream
+                        </h5>
+                        <div class="card__authors">
+                          <a class="card__authors-link" href="#"
+                            >Megan Anderson</a
+                          >
+                        </div>
+                      </div>
+                    </div>
+                  </article>
+                </a>
+              </div>
+
+              <div class="col">
+                <a href="#">
+                  <article class="card card--sand card--sm">
+                    <div class="card__link">
+                      <img
+                        src="./assets/img/blog-img-3.jpeg"
+                        alt="CardImg"
+                        class="card__img"
+                      />
+
+                      <div class="card__content">
+                        <h5 class="card__heading">I always loved aesthetics</h5>
+                        <div class="card__authors">
+                          <a class="card__authors-link" href="#"
+                            >Hannah Weastell</a
+                          >
+                          ,
+                          <a class="card__authors-link" href="#"
+                            >Victoria West</a
+                          >
+                        </div>
+                      </div>
+                    </div>
+                  </article>
+                </a>
+              </div>
+
+              <div class="col">
+                <a href="#">
+                  <article class="card card--aqua card--sm">
+                    <div class="card__link">
+                      <img
+                        src="./assets/img/blog-img-4.jpeg"
+                        alt="CardImg"
+                        class="card__img"
+                      />
+
+                      <div class="card__content">
+                        <h5 class="card__heading">
+                          Creating deluxe drink is like playing a sport
+                        </h5>
+                        <div class="card__authors">
+                          <a class="card__authors-link" href="#"
+                            >Victoria West</a
+                          >
+                        </div>
+                      </div>
+                    </div>
+                  </article>
+                </a>
+              </div>
+
+              <div class="col">
+                <a href="#">
+                  <article class="card card--peach card--sm">
+                    <div class="card__link">
+                      <img
+                        src="./assets/img/blog-img-5.jpeg"
+                        alt="CardImg"
+                        class="card__img"
+                      />
+
+                      <div class="card__content">
+                        <h5 class="card__heading">You must grow like a tree</h5>
+                        <div class="card__authors">
+                          <a class="card__authors-link" href="#"
+                            >Patricia Jenkins</a
+                          >
+                          ,
+                          <a class="card__authors-link" href="#"
+                            >Charles Barrett</a
+                          >
+                        </div>
+                      </div>
+                    </div>
+                  </article>
+                </a>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="lastest-post-section">
+          <h4 class="section__heading">LATEST POSTS</h4>
+          <svg class="section__heading__seperate" role="img" viewBox="0 0 136 24" xmlns="http://www.w3.org/2000/svg"><path d="M1.525 1.525a3.5 3.5 0 014.95 0L20 15.05 33.525 1.525a3.5 3.5 0 014.95 0L52 15.05 65.525 1.525a3.5 3.5 0 014.95 0L84 15.05 97.525 1.525a3.5 3.5 0 014.95 0L116 15.05l13.525-13.525a3.5 3.5 0 014.95 4.95l-16 16a3.5 3.5 0 01-4.95 0L100 8.95 86.475 22.475a3.5 3.5 0 01-4.95 0L68 8.95 54.475 22.475a3.5 3.5 0 01-4.95 0L36 8.95 22.475 22.475a3.5 3.5 0 01-4.95 0l-16-16a3.5 3.5 0 010-4.95z"></path></svg>
+
+          <article class="post">
+            <a href="#" class="post-link">
+              <img
+                src="./assets/img/blog-img-6.jpeg"
+                alt="PostImg"
+                class="post__img"
+              />
+            </a>
+            <div class="post__content">
+              <a href="#" class="tag">Creative</a>
+              <h4 class="post__heading">
+                <a href="#" class="post__link"
+                  >I work best when my space is filled with inspiration</a
+                >
+              </h4>
+
+              <p class="post__desc">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Accusantium, debitis assumenda aut veniam autem tenetur
+                quibusdam perspiciatis reiciendis quaerat mollitia.
+              </p>
+
+              <div class="post__detail">
+                <div class="post__detail-left">
+                  <a href="#" class="post__authors-link">
+                    <img
+                      src="./assets/img/author-1.jpg"
+                      alt="Authors"
+                      class="post__authors-img"
+                    />
+                  </a>
+                  <a href="#" class="post__authors-link">
+                    <img
+                      src="./assets/img/author-2.jpg"
+                      alt="Authors"
+                      class="post__authors-img"
+                    />
+                  </a>
+                </div>
+
+                <div class="post__detail-right">
+                  <span class="post__authors">
+                    <a href="#" class="post__authors-link">Victoria West</a>
+                    ,
+                    <a href="#" class="post__authors-link">Lauren Langford</a>
+                  </span>
+
+                  <span class="post__created-date">September 30, 2020</span>
+                  <span class="post__read-time">3 minutes read</span>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <div class="post-list">
+            <div class="row row-xl-3 row-lg-2 row-sm-1">
+              <div class="col">
+                <article class="card card--md card--aqua">
+                  <img
+                    src="./assets/img/blog-img-1.jpeg"
+                    alt=""
+                    class="card__img"
+                  />
+                  <div class="card__content">
+                    <h4 class="card__heading">
+                      <a href="#" class="card__link">Don’t be afraid</a>
+                    </h4>
+
+                    <div class="card__authors">
+                      <a href="#" class="card__authors-link">Megan Anderson</a>
+                      ,
+                      <a href="#" class="card__authors-link">Lauren Langford</a>
+                    </div>
+                    <div class="card__bottom">
+                      <a href="#" class="tag">Story</a>
+                    </div>
+                  </div>
+                </article>
+              </div>
+
+              <div class="col">
+                <article class="card card--md card--aqua">
+                  <img
+                    src="./assets/img/blog-img-2.jpeg"
+                    alt=""
+                    class="card__img"
+                  />
+                  <div class="card__content">
+                    <h4 class="card__heading">
+                      <a href="#" class="card__link"
+                        >Anyone can hold the helm when the sea is calm</a
+                      >
+                    </h4>
+
+                    <div class="card__authors">
+                      <a href="#" class="card__authors-link">Megan Anderson</a>
+                      ,
+                      <a href="#" class="card__authors-link">Charles Barrett</a>
+                    </div>
+                    <div class="card__bottom">
+                      <a href="#" class="tag">Home</a>
+                    </div>
+                  </div>
+                </article>
+              </div>
+
+              <div class="col">
+                <article class="card card--md card--peach">
+                  <img
+                    src="./assets/img/blog-img-3.jpeg"
+                    alt=""
+                    class="card__img"
+                  />
+                  <div class="card__content">
+                    <h4 class="card__heading">
+                      <a href="#" class="card__link"
+                        >You have to fight to reach your dream</a
+                      >
+                    </h4>
+
+                    <div class="card__authors">
+                      <a href="#" class="card__authors-link">Megan Anderson</a>
+                    </div>
+                    <div class="card__bottom">
+                      <a href="#" class="tag">Product</a>
+                      <a href="#" class="tag tag--round">
+                        <i class="fas fa-lock"></i>
+                      </a>
+                    </div>
+                  </div>
+                </article>
+              </div>
+
+              <div class="col">
+                <article class="card card--md card--rose">
+                  <img
+                    src="./assets/img/blog-img-4.jpeg"
+                    alt="Image"
+                    class="card__img"
+                  />
+                  <div class="card__content">
+                    <h4 class="card__heading">
+                      <a href="#" class="card__link"
+                        >Cuisine is a mirror, reflecting the culture</a
+                      >
+                    </h4>
+
+                    <div class="card__authors">
+                      <a href="#" class="card__authors-link">Victoria West</a>
+                      ,
+                      <a href="#" class="card__authors-link"
+                        >Patricia Jenkins</a
+                      >
+                    </div>
+                    <div class="card__bottom">
+                      <a href="#" class="tag">Creative</a>
+                    </div>
+                  </div>
+                </article>
+              </div>
+
+              <div class="col">
+                <article class="card card--md card--sand">
+                  <img
+                    src="./assets/img/blog-img-5.jpeg"
+                    alt="Image"
+                    class="card__img"
+                  />
+                  <div class="card__content">
+                    <h4 class="card__heading">
+                      <a href="#" class="card__link"
+                        >Being unique is better than being perfect</a
+                      >
+                    </h4>
+
+                    <div class="card__authors">
+                      <a href="#" class="card__authors-link">Megan Anderson</a>
+                    </div>
+                    <div class="card__bottom">
+                      <a href="#" class="tag">Home</a>
+                    </div>
+                  </div>
+                </article>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="pagination">
+              <button class="btn btn--blue btn--lg">Load more</button>
+          </div>
+        </section>
+
+        <section class="story-section">
+          <h4 class="section__heading">STORY</h4>
+          <svg class="section__heading__seperate" role="img" viewBox="0 0 136 24" xmlns="http://www.w3.org/2000/svg"><path d="M1.525 1.525a3.5 3.5 0 014.95 0L20 15.05 33.525 1.525a3.5 3.5 0 014.95 0L52 15.05 65.525 1.525a3.5 3.5 0 014.95 0L84 15.05 97.525 1.525a3.5 3.5 0 014.95 0L116 15.05l13.525-13.525a3.5 3.5 0 014.95 4.95l-16 16a3.5 3.5 0 01-4.95 0L100 8.95 86.475 22.475a3.5 3.5 0 01-4.95 0L68 8.95 54.475 22.475a3.5 3.5 0 01-4.95 0L36 8.95 22.475 22.475a3.5 3.5 0 01-4.95 0l-16-16a3.5 3.5 0 010-4.95z"></path></svg>
+          <div class="story__list">
+              <div class="row row-xl-4 row-lg-3 row-sm-2">
+                <div class="col">
+                    <a href="#">
+                      <article class="card card--light-blue card--sm">
+                        <div class="card__link">
+                          <img
+                            src="./assets/img/blog-img-1.jpeg"
+                            alt="CardImg"
+                            class="card__img"
+                          />
+    
+                          <div class="card__content">
+                            <h5 class="card__heading">Don’t be afraid</h5>
+                            <div class="card__authors">
+                              <a class="card__authors-link" href="#"
+                                >Megan Anderson</a
+                              >
+                              ,
+                              <a class="card__authors-link" href="#"
+                                >Lauren Langford</a
+                              >
+                            </div>
+                          </div>
+                        </div>
+                      </article>
+                    </a>
+                </div>
+
+                <div class="col">
+                    <a href="#">
+                      <article class="card card--aqua card--sm">
+                        <div class="card__link">
+                          <img
+                            src="./assets/img/blog-img-2.jpeg"
+                            alt="CardImg"
+                            class="card__img"
+                          />
+    
+                          <div class="card__content">
+                            <h5 class="card__heading">Anyone can hold the helm when the sea is calm</h5>
+                            <div class="card__authors">
+                              <a class="card__authors-link" href="#"
+                                >Megan Anderson</a
+                              >
+                              ,
+                              <a class="card__authors-link" href="#"
+                                >Charles Barrett</a
+                              >
+                            </div>
+                          </div>
+                        </div>
+                      </article>
+                    </a>
+                </div>
+
+                <div class="col">
+                    <a href="#">
+                      <article class="card card--peach card--sm">
+                        <div class="card__link">
+                          <img
+                            src="./assets/img/blog-img-3.jpeg"
+                            alt="CardImg"
+                            class="card__img"
+                          />
+    
+                          <div class="card__content">
+                            <h5 class="card__heading">Cuisine is a mirror, reflecting the culture</h5>
+                            <div class="card__authors">
+                              <a class="card__authors-link" href="#"
+                                >Victoria West</a
+                              >
+                              ,
+                              <a class="card__authors-link" href="#"
+                                >Patricia Jenkins</a
+                              >
+                            </div>
+                          </div>
+                        </div>
+                      </article>
+                    </a>
+                </div>
+
+                <div class="col">
+                    <a href="#">
+                      <article class="card card--sand card--sm">
+                        <div class="card__link">
+                          <img
+                            src="./assets/img/blog-img-3.jpeg"
+                            alt="CardImg"
+                            class="card__img"
+                          />
+    
+                          <div class="card__content">
+                            <h5 class="card__heading">I always loved aesthetics</h5>
+                            <div class="card__authors">
+                              <a class="card__authors-link" href="#"
+                                >Hannah Weastell</a
+                              >
+                              ,
+                              <a class="card__authors-link" href="#"
+                                >Victoria West</a
+                              >
+                            </div>
+                          </div>
+                        </div>
+                      </article>
+                    </a>
+                </div>
+          </div>
+        
+        </section>
+
+        <div class="subscribe-section">
+            <h4 class="subscribe__heading">Subscribe to new posts</h4>
+            <form class="subscribe__form">
+                <input class="subscribe__input" required type="email" placeholder="Your email address">
+                <button class="btn btn--lg btn--blue" type="submit">Subscribe</button>
+            </form>
+        </div>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="wrapper">
+        <div class="row row-lg-3 row-sm-2">
+          <div class="col">
+            <img src="./assets/img/logo.svg" alt="Logo" class="footer__logo logo">
+            <p class="footer__desc">A minimal, functional theme for running a paid-membership publication on Ghost.</p>
+
+            <div class="footer__social">
+              <ul class="footer__social-list">
+                <li class="footer__social-item">
+                  <a href="#" class="footer__social-item-link">
+                    <i class="fab fa-facebook"></i>
+                  </a>
+                </li>
+
+                <li class="footer__social-item">
+                  <a href="#" class="footer__social-item-link">
+                    <i class="fab fa-twitter"></i>
+                  </a>
+                </li>
+
+                <li class="footer__social-item">
+                  <a href="#" class="footer__social-item-link">
+                    <i class="fab fa-meetup"></i>
+                  </a>
+                </li>
+
+                <li class="footer__social-item">
+                  <a href="#" class="footer__social-item-link">
+                    <i class="fab fa-youtube"></i>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="footer__nav">
+              <h5 class="footer__nav-heading">ABOUT</h5>
+
+              <ul class="footer__nav-list">
+                <li class="footer__nav-item">
+                  <a href="#" class="footer__nav-item-link">Features</a>
+                </li>
+
+                <li class="footer__nav-item">
+                  <a href="#" class="footer__nav-item-link">Contact</a>
+                </li>
+
+                <li class="footer__nav-item">
+                  <a href="#" class="footer__nav-item-link">Styles guide</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="footer__nav">
+              <h5 class="footer__nav-heading">FEATURES</h5>
+
+              <ul class="footer__nav-list">
+                <li class="footer__nav-item">
+                  <a href="#" class="footer__nav-item-link">Account</a>
+                </li>
+
+                <li class="footer__nav-item">
+                  <a href="#" class="footer__nav-item-link">Membership</a>
+                </li>
+
+                <li class="footer__nav-item">
+                  <a href="#" class="footer__nav-item-link">Sign in</a>
+                </li>
+
+                <li class="footer__nav-item">
+                  <a href="#" class="footer__nav-item-link">Sign up</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="footer__nav">
+              <h5 class="footer__nav-heading">SUPPORT</h5>
+
+              <ul class="footer__nav-list">
+                <li class="footer__nav-item">
+                  <a href="#" class="footer__nav-item-link">Authors</a>
+                </li>
+
+                <li class="footer__nav-item">
+                  <a href="#" class="footer__nav-item-link">Tags</a>
+                </li>
+
+                <li class="footer__nav-item">
+                  <a href="#" class="footer__nav-item-link">Dark version</a>
+                </li>
+
+                <li class="footer__nav-item">
+                  <a href="#" class="footer__nav-item-link">404</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <span class="footer__copyright">Okiro &copy; 2021. All Right Reserved. Published with Ghost.</span>
+      </div>
+    </footer>
+
+    <input type="checkbox" hidden id="search-modal">
+    <section class="search-modal">
+      <div class="search-modal__close">
+        <label for="search-modal">
+          <i class="fas fa-times"></i>
+        </label>
+      </div>
+
+      <div class="search-modal__content">
+        <input type="text" placeholder="Type your keywords" class="search-modal__input">
+        <div class="search-modal__desc-container">
+          <span>PLEASE ENTER AT LEAST 3 CHARACTERS</span>
+        </div>
+      </div>
+    </section>
+    <label for="search-modal" class="overlay"></label>
+
+    <div class="change-theme">
+      <input type="checkbox" hidden  id="change-theme">
+      <label for="change-theme" id="change-theme-label">
+        <img src="./assets/img/sun.png" alt="Image" class="change-theme__img change-theme__img-sun">
+        <img src="./assets/img/half-moon.png" alt="Image" class="change-theme__img change-theme__img-moon">
+      </label>
+      <div class="change-theme__round">&nbsp;</div>
+    </div>
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,35 @@
+.btn {
+    display: inline-block;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    font-size: 2rem;
+    font-weight: 900;
+    border-radius: 10rem;
+    transition: all 0.2s;
+    &.btn--md {
+        padding: 1.2rem 2.2rem;
+    }
+
+    &.btn--lg {
+        padding: 2.5rem 3rem;
+
+        @include respond(desk) {
+            padding: 2.2rem 2.6rem;
+        }
+
+        @include respond(mb-sm) {
+            padding: 2.2rem 1.6rem;
+        }
+        
+    }
+
+    &.btn--blue {
+        background-color: $color-blue;
+        color: $color-white;
+
+        &:hover {
+            background-color: darken($color: $color-blue, $amount: 15%);
+        }
+    }
+}

@@ -1,0 +1,140 @@
+.featured-section {
+    --col-space: 2rem;
+
+    position: relative;
+
+    @include respond(max-tab) {
+        --col-space: 1rem;
+
+        .card {
+            height: 100%;
+        }
+    }
+
+    .col {
+
+        &:last-child {
+            @include respond(mb-md) {
+                flex-basis: 100%;
+            }
+        }
+        @include respond(max-tab) {
+            margin-bottom: 2rem;
+        }
+    }
+}
+
+.lastest-post-section {
+    position: relative;
+    margin: 6.4rem -2rem 0;
+
+
+    .col {
+        margin-bottom: 4rem;
+    }
+    
+    .post-list {
+        --col-space: 2rem;
+        padding: 0 4rem;
+        margin-top: 4.8rem;
+
+        @include respond(desk) {
+            padding: 0;
+        }
+
+        @include respond(max-tab) {
+            --col-space: 1rem;
+            
+        }
+
+        .col {
+            @include respond(max-tab) {
+                margin-top: 2.4rem;
+            }
+
+            &:last-child {
+                @include respond(mb-md) {
+                    flex-basis: 100%;
+                }
+            }
+        }
+    
+        .row + .row {
+            margin-top: 4.8rem;
+        }
+    }
+}
+
+
+.story-section {
+    --col-space: 2.8rem;
+    margin-top: 2.4rem;
+    position: relative;
+
+    @include respond(max-tab) {
+        --col-space: 1rem;
+        .col {
+            margin-bottom: 1.2rem;
+        }
+
+        .card {
+            height: 100%;
+        }
+    }
+
+    .section__heading {
+        left: -7rem;
+    }
+}
+
+.subscribe-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 8rem 0;
+
+    @include respond(max-tab) {
+        flex-direction: column;
+    }
+    
+    .subscribe__heading {
+        font-size: 4.6rem;
+        font-weight: 900;
+        color: $color-text;
+        @include respond(tab) {
+            margin-bottom: 1.2rem;
+        }
+    }
+    
+    .subscribe__form {
+        display: flex;
+        height: 9.4rem;
+        padding: 1rem;
+        border-radius: 10rem;
+        background-color: $color-grey-dark;
+    }
+
+    .subscribe__input {
+        width: 23rem;
+        height: 100%;
+        padding-left: 4.2rem;
+        background-color: inherit;
+        border: none;
+        border-radius: 10rem;
+        outline: none;
+        font-size: 2rem;
+        color: $color-text;
+        transition: width 0.3s;
+
+        @include respond(mb-sm) {
+            width: 16rem;
+        }
+
+        &:focus {
+            width: 26rem;
+            @include respond(mb-sm) {
+                width: 19rem;
+            }
+        }
+    }
+}

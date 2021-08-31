@@ -1,0 +1,31 @@
+.section__heading {
+    position: absolute;
+    top: 2rem;
+    left: -10rem;
+    transform: rotate(-90deg);
+    font-size: 1rem;
+    font-weight: 900;
+    text-transform: uppercase;
+    line-height: 1.5;
+    letter-spacing: 0.8rem;
+
+    &__seperate {
+        width: 10rem;
+        display: block;
+        margin: 0.8rem auto 2rem;
+        fill: $color-grey;
+        transform: translateX(-4px);
+        display: none;
+
+        @include respond(max-tab) {
+            display: block;
+        }
+    }
+
+    @include respond(max-tab) {
+        position: initial;
+        transform: rotate(0);
+        text-align: center;
+
+    }
+}

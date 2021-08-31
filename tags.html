@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Authors</title>
+    <link rel="stylesheet" href="./assets/font/font.css" />
+    <link rel="stylesheet" href="./assets/icon/fontawesome-free-5.15.4-web/css/all.min.css">
+    <link rel="stylesheet" href="./assets/css/style.css" />
+  </head>
+  <body class="">
+    <header class="header">
+      <div class="wrapper header-container">
+        <div class="navigation">
+          <ul class="navigation__list">
+            <li class="navigation__item">
+              <a href="index.html" class="navigation__item-link">Home</a>
+            </li>
+
+            <li class="navigation__item">
+              <a href="authors.html" class="navigation__item-link">Authors</a>
+            </li>
+
+            <li class="navigation__item">
+              <a href="tags.html" class="navigation__item-link  navigation__item-link--active">Tags</a>
+            </li>
+
+            <li class="navigation__item">
+              <div class="dropdown-btn navigation__dropdown">
+                <i class="fas fa-ellipsis-h"></i>
+              </div>
+
+              <div class="sub-nav">
+                <ul class="sub-nav__list">
+                  <li class="sub-nav__item">
+                    <a href="#" class="sub-nav__item-link">Features</a>
+                  </li>
+
+                  <li class="sub-nav__item">
+                    <a href="#" class="sub-nav__item-link">Subscribe</a>
+                  </li>
+
+                  <li class="sub-nav__item">
+                    <a href="#" class="sub-nav__item-link">Contact</a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+          </ul>
+        </div>
+
+        <div class="header__logo-box">
+          <a href="index.html">
+            <img
+              src="./assets/img/logo.svg"
+              alt="Logo"
+              class="header__logo-img logo"
+            />
+          </a>
+        </div>
+
+        <div class="header__right">
+          <div class="header__right-item search">
+            <label for="search-modal">
+              <i class="fas fa-search search-icon"></i>
+            </label>
+          </div>
+
+          <a href="sign-in.html" class="header__right-item header__sign-in">Sign in</a>
+          <a
+            href="sign-up.html"
+            class="header__right-item btn btn--md btn--blue header__sign-up"
+            >Sign up</a
+          >
+        </div>
+
+        <div class="mobile-menu">
+          <label for="mobile-menu">
+            <div class="bar-container">
+              <span class="bar bar-1">&nbsp;</span>
+              <span class="bar bar-2">&nbsp;</span>
+              <span class="bar bar-3">&nbsp;</span>
+            </div>
+          </label>
+
+          <input type="checkbox" hidden id="mobile-menu">
+          <div class="sub-nav">
+            <ul class="sub-nav__list">
+              <li class="sub-nav__item">
+                <a href="index.html" class="sub-nav__item-link">Home</a>
+              </li>
+
+              <li class="sub-nav__item">
+                <a href="authors.html" class="sub-nav__item-link">Authors</a>
+              </li>
+
+              <li class="sub-nav__item">
+                <a href="#" class="sub-nav__item-link">Tags</a>
+              </li>
+
+              <li class="sub-nav__item">
+                <a href="#" class="sub-nav__item-link">Subscribe</a>
+              </li>
+
+              <li class="sub-nav__item">
+                <a href="#" class="sub-nav__item-link">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main class="main">
+      <div class="wrapper">
+        <section class="authors-section">
+          <h4 class="section__heading">Authors</h4>
+          <svg class="section__heading__seperate" role="img" viewBox="0 0 136 24" xmlns="http://www.w3.org/2000/svg"><path d="M1.525 1.525a3.5 3.5 0 014.95 0L20 15.05 33.525 1.525a3.5 3.5 0 014.95 0L52 15.05 65.525 1.525a3.5 3.5 0 014.95 0L84 15.05 97.525 1.525a3.5 3.5 0 014.95 0L116 15.05l13.525-13.525a3.5 3.5 0 014.95 4.95l-16 16a3.5 3.5 0 01-4.95 0L100 8.95 86.475 22.475a3.5 3.5 0 01-4.95 0L68 8.95 54.475 22.475a3.5 3.5 0 01-4.95 0L36 8.95 22.475 22.475a3.5 3.5 0 01-4.95 0l-16-16a3.5 3.5 0 010-4.95z"></path></svg>
+
+          <div class="authors-section__list">
+            <div class="row row-xl-5 row-lg-4">
+              <div class="col">
+                <a href="#">
+                  <article class="card card--sm">
+                    <div class="card__link">
+                      <img
+                        src="./assets/img/tag-1.jpg"
+                        alt="CardImg"
+                        class="card__img"
+                      />
+
+                      <div class="card__content">
+                        <h5 class="card__heading">Creative</h5>
+                        <div class="card__authors">
+                          <span>
+                            <span class="author-post-num">7</span>
+                            posts
+                          </span>
+                        </div>
+                      </div>
+                    </div>
+                  </article>
+                </a>
+              </div>
+
+              <div class="col">
+                <a href="#">
+                  <article class="card card--sm">
+                    <div class="card__link">
+                      <img
+                        src="./assets/img/tag-2.jpeg"
+                        alt="CardImg"
+                        class="card__img"
+                      />
+
+                      <div class="card__content">
+                        <h5 class="card__heading">Idea</h5>
+                        <div class="card__authors">
+                          <span>
+                            <span class="author-post-num">10</span>
+                            posts
+                          </span>
+                        </div>
+                      </div>
+                    </div>
+                  </article>
+                </a>
+              </div>
+
+              <div class="col">
+                <a href="#">
+                  <article class="card card--sm">
+                    <div class="card__link">
+                      <img
+                        src="./assets/img/tag-5.jpeg"
+                        alt="CardImg"
+                        class="card__img"
+                      />
+
+                      <div class="card__content">
+                        <h5 class="card__heading">Story</h5>
+                        <div class="card__authors">
+                          <span>
+                            <span class="author-post-num">9</span>
+                            posts
+                          </span>
+                        </div>
+                      </div>
+                    </div>
+                  </article>
+                </a>
+              </div>
+
+              <div class="col">
+                <a href="#">
+                  <article class="card card--sm">
+                    <div class="card__link">
+                      <img
+                        src="./assets/img/tag-4.jpeg"
+                        alt="CardImg"
+                        class="card__img"
+                      />
+
+                      <div class="card__content">
+                        <h5 class="card__heading">Product</h5>
+                        <div class="card__authors">
+                          <span>
+                            <span class="author-post-num">8</span>
+                            posts
+                          </span>
+                        </div>
+                      </div>
+                    </div>
+                  </article>
+                </a>
+              </div>
+
+              <div class="col">
+                <a href="#">
+                  <article class="card card--sm">
+                    <div class="card__link">
+                      <img
+                        src="./assets/img/tag-5.jpeg"
+                        alt="CardImg"
+                        class="card__img"
+                      />
+
+                      <div class="card__content">
+                        <h5 class="card__heading">Lifestyle</h5>
+                        <div class="card__authors">
+                          <span>
+                            <span class="author-post-num">5</span>
+                            posts
+                          </span>
+                        </div>
+                      </div>
+                    </div>
+                  </article>
+                </a>
+              </div>
+
+              
+            </div>
+
+            <div class="author__else">
+              <h6 class="author__else-heading">See also</h6>
+              <a href="#" class="card__link">
+              <div class="card card--sm-h">
+                  <img src="./assets/img/tag-6.jpg" alt="Image" class="card__img">
+                  <h5 class="card__name">Home</h5>
+                </div>
+              </a>
+            </div>
+          </div>
+        </section>
+
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="wrapper">
+        <div class="row row-lg-3 row-sm-2">
+          <div class="col">
+            <img src="./assets/img/logo.svg" alt="Logo" class="footer__logo logo">
+            <p class="footer__desc">A minimal, functional theme for running a paid-membership publication on Ghost.</p>
+
+            <div class="footer__social">
+              <ul class="footer__social-list">
+                <li class="footer__social-item">
+                  <a href="#" class="footer__social-item-link">
+                    <i class="fab fa-facebook"></i>
+                  </a>
+                </li>
+
+                <li class="footer__social-item">
+                  <a href="#" class="footer__social-item-link">
+                    <i class="fab fa-twitter"></i>
+                  </a>
+                </li>
+
+                <li class="footer__social-item">
+                  <a href="#" class="footer__social-item-link">
+                    <i class="fab fa-meetup"></i>
+                  </a>
+                </li>
+
+                <li class="footer__social-item">
+                  <a href="#" class="footer__social-item-link">
+                    <i class="fab fa-youtube"></i>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="footer__nav">
+              <h5 class="footer__nav-heading">ABOUT</h5>
+
+              <ul class="footer__nav-list">
+                <li class="footer__nav-item">
+                  <a href="#" class="footer__nav-item-link">Features</a>
+                </li>
+
+                <li class="footer__nav-item">
+                  <a href="#" class="footer__nav-item-link">Contact</a>
+                </li>
+
+                <li class="footer__nav-item">
+                  <a href="#" class="footer__nav-item-link">Styles guide</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="footer__nav">
+              <h5 class="footer__nav-heading">FEATURES</h5>
+
+              <ul class="footer__nav-list">
+                <li class="footer__nav-item">
+                  <a href="#" class="footer__nav-item-link">Account</a>
+                </li>
+
+                <li class="footer__nav-item">
+                  <a href="#" class="footer__nav-item-link">Membership</a>
+                </li>
+
+                <li class="footer__nav-item">
+                  <a href="#" class="footer__nav-item-link">Sign in</a>
+                </li>
+
+                <li class="footer__nav-item">
+                  <a href="#" class="footer__nav-item-link">Sign up</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="footer__nav">
+              <h5 class="footer__nav-heading">SUPPORT</h5>
+
+              <ul class="footer__nav-list">
+                <li class="footer__nav-item">
+                  <a href="#" class="footer__nav-item-link">Authors</a>
+                </li>
+
+                <li class="footer__nav-item">
+                  <a href="#" class="footer__nav-item-link">Tags</a>
+                </li>
+
+                <li class="footer__nav-item">
+                  <a href="#" class="footer__nav-item-link">Dark version</a>
+                </li>
+
+                <li class="footer__nav-item">
+                  <a href="#" class="footer__nav-item-link">404</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <span class="footer__copyright">Okiro &copy; 2021. All Right Reserved. Published with Ghost.</span>
+      </div>
+    </footer>
+
+    <input type="checkbox" hidden id="search-modal">
+    <section class="search-modal">
+      <div class="search-modal__close">
+        <label for="search-modal">
+          <i class="fas fa-times"></i>
+        </label>
+      </div>
+
+      <div class="search-modal__content">
+        <input type="text" placeholder="Type your keywords" class="search-modal__input">
+        <div class="search-modal__desc-container">
+          <span>PLEASE ENTER AT LEAST 3 CHARACTERS</span>
+        </div>
+      </div>
+    </section>
+    <label for="search-modal" class="overlay"></label>
+
+    <div class="change-theme">
+      <input type="checkbox" hidden  id="change-theme">
+      <label for="change-theme" id="change-theme-label">
+        <img src="./assets/img/sun.png" alt="Image" class="change-theme__img change-theme__img-sun">
+        <img src="./assets/img/half-moon.png" alt="Image" class="change-theme__img change-theme__img-moon">
+      </label>
+      <div class="change-theme__round">&nbsp;</div>
+    </div>
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>

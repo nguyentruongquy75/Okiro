@@ -1,0 +1,40 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+    font-size: 62.5%;
+    -webkit-tap-highlight-color: transparent;
+
+    @include respond(desk) {
+        font-size: 56.25%;
+    }
+
+    @include respond(tab) {
+        font-size: 59.375%;
+    }
+
+    @include respond(mb-sm) {
+        font-size: 53.125%;
+    }
+
+
+}
+
+body {
+    box-sizing: border-box;
+
+    @include respond(mb-sm) {
+        overflow-x: hidden;
+    }
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
